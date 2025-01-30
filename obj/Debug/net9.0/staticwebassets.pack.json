@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.1\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Moment1.1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Moment1.1.yegnfw97cd.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Moment1.1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Moment1.1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Moment1.1.props",
+      "PackagePath": "build\\Moment1.1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Moment1.1.props",
+      "PackagePath": "buildMultiTargeting\\Moment1.1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Moment1.1.props",
+      "PackagePath": "buildTransitive\\Moment1.1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
