@@ -16,10 +16,12 @@
             <img src="~/assets/logo.png" alt="logotyp">
         </div>
         <p>
+            <!-- Deklarerar ett DateTime-objekt och sätter det till dagens datum utan angiven tid. -->
             @{
                 var date = DateTime.Today;
             }
 
+            <!-- Skriver ut ett formaterat datum som sträng i kort datumformat. -->
             Dagens datum är: @date.ToString("d")
         </p>
     </header>
@@ -28,6 +30,7 @@
         <aside>
             <nav>
                 <ul>
+                    <!-- Kontrollerar undersidans URL, stämmer den sätts klassen active, annars tom. -->
                     <li><a href="/Index" class="@(Context.Request.Path == "/Index" ? "active" : "")">START</a></li>
                     <li><a href="/Razor" class="@(Context.Request.Path == "/Razor" ? "active" : "")">RAZOR</a></li>
                     <li><a href="/About" class="@(Context.Request.Path == "/About" ? "active" : "")">OM SIDAN</a></li>

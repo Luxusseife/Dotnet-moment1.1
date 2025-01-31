@@ -29,7 +29,6 @@ a {
 /* Mörkt tema. */
 body.dark-mode {
     background-color: #9fa3aa;
-    color: #ffffff;
 }
 
 body.dark-mode header, body.dark-mode footer {
@@ -51,6 +50,6 @@ body.dark-mode button:hover, body.dark-mode nav a:hover, body.dark-mode .active 
     background-color: #ffff00;
 }
 
-body.dark-mode a {
+body.dark-mode footer a {
     color: #ffffff;
 }

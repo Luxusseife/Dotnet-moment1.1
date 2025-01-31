@@ -5,3 +5,62 @@
 }
 
 <h1>@ViewData["Title"]</h1>
+
+<div class="info-container">
+
+    <div class="info">
+        <h2>Information</h2>
+
+        @{
+            // Deklarerar ett DateTime-objekt och sätter det till nuvarande tidpunkt.
+            var date = DateTime.Now;
+
+            // Skapar ett DateTime-objekt och hämtar veckodagen som en enum.
+            DateTime today = DateTime.Now;
+            DayOfWeek day = today.DayOfWeek;
+            int dayValue = (int)day;
+        }
+
+        <h3>Datum och klockslag: @date</h3>
+
+        <!-- Kontrollerar om dagens enum-värde överensstämmer med angivet värde för fredag. -->
+        @if (dayValue == 5)
+        {
+            <p>Idag är det fredag!</p>
+        }
+        else
+        {
+            <p>Idag är det inte fredag!</p>
+        }
+
+        @{
+            // Deklarerar en string-array med kurser.
+            string[] courses = {
+                "DT057G, Webbutveckling I",
+                "DT084G, Introduktion till programmering i JavaScript",
+                "DT200G, Grafisk teknik för webb",
+                "DT068G, Webbanvändbarhet",
+                "DT003G, Databaser",
+                "DT211G, Frontend-baserad webbutveckling",
+                "DT207G, Backend-baserad webbutveckling",
+                "DT208G, Programmering i TypeScript",
+                "IK060G, Projektledning",
+                "DT071G, Programmering i C#.NET",
+                "DT193G, Fullstack-utveckling med ramverk",
+                "DT209G, Webbutveckling för WordPress",
+                "DT191G, Webbutveckling med .NET",
+                "DT210G, Fördjupad frontend-utveckling"
+            };
+        }
+
+        <h3>Kurser jag gått:</h3>
+
+        <!-- Loopar genom kurs-arrayen och skriver ut varje kurs i ett <li>-element. -->
+        <ul id="courses">
+            @foreach (var course in courses)
+            {
+                <li>@course</li>
+            }
+        </ul>
+    </div>
+</div>

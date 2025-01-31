@@ -27,9 +27,14 @@ nav a {
     margin: 0.5rem;
 }
 
-/* Rubrik i main. */
-main h1 {
+/* Rubriker i main. */
+main h1,
+main h2 {
     margin: 0 0 2rem 0;
+}
+
+main h3 {
+    margin: 2rem 0 1rem 0;
 }
 
 /* Container för information på samtliga undersidor. */
@@ -48,15 +53,23 @@ main h1 {
 }
 
 /* Brödtext i main. */
-.story, .about {
+.story,
+.about, 
+.info {
     line-height: 1.6;
     max-width: 60ch;
     margin: 0 auto 1rem auto;
     text-align: left;
 }
 
+/* Kurslista. */
+#courses {
+    margin: 0 0 2rem 1rem;
+}
+
 /* Mediaquery, layout för desktop. */
 @media (min-width: 769px) {
+
     /* Nav-knappar blir större. */
     nav a {
         width: 90%;
@@ -76,7 +89,14 @@ main h1 {
     }
 
     /* Lägger brödtext till vänster som default. */
-    .story, .about {
+    .story,
+    .about,
+    .info {
         margin: 0 0 1rem 0;
+    }
+
+    /* Kurslistans margin ändras. */
+    #courses {
+        margin: 1rem 0 0 1rem;
     }
 }
