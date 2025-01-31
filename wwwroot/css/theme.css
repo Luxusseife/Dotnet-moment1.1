@@ -18,7 +18,7 @@ button, nav a {
     background-color: #ffff00;
 }
 
-button:hover, nav a:hover {
+button:hover, nav a:hover, .active {
     background-color: #ffa500;
 }
 
@@ -47,7 +47,7 @@ body.dark-mode button, body.dark-mode nav a {
     color: #000000;
 }
 
-body.dark-mode button:hover, body.dark-mode nav a:hover {
+body.dark-mode button:hover, body.dark-mode nav a:hover, body.dark-mode .active {
     background-color: #ffff00;
 }
 

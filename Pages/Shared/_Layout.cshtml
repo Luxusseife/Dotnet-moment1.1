@@ -28,9 +28,9 @@
         <aside>
             <nav>
                 <ul>
-                    <li><a href="/Index">START</a></li>
-                    <li><a href="/Razor">RAZOR</a></li>
-                    <li><a href="/About">OM SIDAN</a></li>
+                    <li><a href="/Index" class="@(Context.Request.Path == "/Index" ? "active" : "")">START</a></li>
+                    <li><a href="/Razor" class="@(Context.Request.Path == "/Razor" ? "active" : "")">RAZOR</a></li>
+                    <li><a href="/About" class="@(Context.Request.Path == "/About" ? "active" : "")">OM SIDAN</a></li>
                 </ul>
             </nav>
         </aside>
