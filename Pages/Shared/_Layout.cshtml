@@ -2,40 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - .NET med Razor</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> 
-    <link rel="stylesheet" href="~/Moment1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~/css/theme.css">
+    <link rel="stylesheet" href="~/Moment1.1.styles.css">
 </head>
 
 <body>
     <header>
+        <div>
+            <img src="~/assets/logo.png" alt="logotyp">
+        </div>
+        <p>
+            @{
+                var date = DateTime.Today;
+            }
 
+            Dagens datum är: @date.ToString("d")
+        </p>
     </header>
 
-    <aside>
-        <nav>
-            <ul>
-                <li><a asp-page="/Index">Startsida</a></li>
-                <li><a asp-page="/Razor">Razor</a></li>
-                <li><a asp-page="/About">Om sidan</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="/Index">START</a></li>
+                    <li><a href="/Razor">RAZOR</a></li>
+                    <li><a href="/About">OM SIDAN</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        @RenderBody()
-    </main>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Jenny Lind</p>
+        <p>&copy; 2025 Jenny Lind. Kontakta mig via <a href="mailto:jeli2308@student.miun.se">e-post</a>.</p>
+        <br>
+        <button id="theme-toggle">BYT TEMA</button>
     </footer>
 
-
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

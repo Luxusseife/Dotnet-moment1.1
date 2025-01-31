@@ -1,1 +1,87 @@
-﻿
+﻿/* Header med logotyp och dagens datum. */
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header p {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Aside med navigering (inom en ul). */
+aside {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+/* Main. */
+main {
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+/* Footer med webbutvecklarinfo och en knapp för att växla tema. */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mediaquery, layout för tablet. */
+@media (min-width: 426px) {
+
+    /* Flexar navlistan. Li-elementen lägger sig på en rad. */
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mediaquery, layout för desktop. */
+@media (min-width: 769px) {
+    /* Ökar padding vä/hö. */
+    header {
+        padding: 2rem 5rem;
+        border-bottom: none;
+    }
+
+    ul {
+        display: block;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    
+    aside {
+        flex: 0 0 30%;
+        padding: 1rem;
+        min-height: 100vh;
+    }
+    
+    main {
+        flex: 1;
+        padding: 1rem;
+    }
+}

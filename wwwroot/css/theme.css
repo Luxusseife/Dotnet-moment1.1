@@ -1,0 +1,56 @@
+/* Default, ljust tema. */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header, footer {
+    background-color: #b3b7be;
+    color: #000000;
+}
+
+aside {
+    background-color: #98aec1;
+    color: #000000;
+}
+
+button, nav a {
+    background-color: #ffff00;
+}
+
+button:hover, nav a:hover {
+    background-color: #ffa500;
+}
+
+a {
+    color: #000000;
+}
+
+/* Mörkt tema. */
+body.dark-mode {
+    background-color: #9fa3aa;
+    color: #ffffff;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #383a3d;
+    color: #ffffff;
+}
+
+body.dark-mode aside {
+    background-color: #4f687f;
+    color: #ffffff;
+}
+
+body.dark-mode button, body.dark-mode nav a {
+    background-color: #ffa500;
+    color: #000000;
+}
+
+body.dark-mode button:hover, body.dark-mode nav a:hover {
+    background-color: #ffff00;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}

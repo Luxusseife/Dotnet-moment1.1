@@ -1,0 +1,37 @@
+/* Normalisering. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body. */
+body {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Länkar. */
+nav a {
+    display: inline-block;
+    min-width: 125px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+/* Mediaquery, nav-knappar blir större. */
+@media (min-width: 769px) {
+    nav a {
+        width: 90%;
+        max-width: 300px;
+        margin: 1rem;
+    }
+}
