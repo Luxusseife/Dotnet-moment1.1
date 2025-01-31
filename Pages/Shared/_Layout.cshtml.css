@@ -26,7 +26,7 @@ ul {
 
 /* Main. */
 main {
-    margin: 2rem 1rem;
+    margin: 1rem;
     text-align: center;
 }
 
@@ -82,6 +82,7 @@ button {
     
     main {
         flex: 1;
-        padding: 1rem;
+        text-align: left;
+        margin: 1rem 2rem;
     }
 }

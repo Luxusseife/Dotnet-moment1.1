@@ -27,11 +27,56 @@ nav a {
     margin: 0.5rem;
 }
 
-/* Mediaquery, nav-knappar blir större. */
+/* Rubrik i main. */
+main h1 {
+    margin: 0 0 2rem 0;
+}
+
+/* Container för information på samtliga undersidor. */
+#info-container {
+    padding: 1rem;
+}
+
+/* Bild-container med bild. */
+#img-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#img-container img {
+    width: 100%;
+}
+
+/* Brödtext i main. */
+.story, .about {
+    line-height: 1.6;
+    max-width: 60ch;
+    margin: 0 auto 1rem auto;
+    text-align: left;
+}
+
+/* Mediaquery, layout för desktop. */
 @media (min-width: 769px) {
+    /* Nav-knappar blir större. */
     nav a {
         width: 90%;
         max-width: 300px;
         margin: 1rem;
+    }
+
+    /* Tar bort padding. */
+    #info-container {
+        padding: 0;
+    }
+
+    /* Containern placeras till vänster och ökar i storlek. */
+    #img-container {
+        max-width: 400px;
+        margin: 0;
+    }
+
+    /* Lägger brödtext till vänster som default. */
+    .story, .about {
+        margin: 0 0 1rem 0;
     }
 }
